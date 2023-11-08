@@ -1,0 +1,30 @@
+package classTest;
+
+class Order{
+	long orderNo;
+	String orderID;
+	int orderDate;
+	String name;
+	int orderItemNumber;
+	String address;
+
+	void showOrderInfo() {
+		System.out.printf("주문번호:%l, 주문자아이디:%s, 주문날짜:%d,주문자 이름:%s, 주문상품번호:%d, 배송주소:%s",orderNo,orderID,orderDate,name,orderItemNumber,address);
+	}
+	
+	
+}
+
+public class OrderTest {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Order or = new Order();
+		
+		or.orderNo = 2018031200;
+		or.orderID = "abc123";
+		
+	}
+
+}

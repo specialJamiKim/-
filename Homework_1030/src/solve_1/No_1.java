@@ -1,0 +1,16 @@
+package solve_1;
+
+import java.util.Scanner;
+
+public class No_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int input1 = sc.nextInt();
+		int input2 = sc.nextInt();
+		int sum = input1 + input2;
+		System.out.printf("%d+%d은 %d",input1,input2,sum);
+	}
+
+}

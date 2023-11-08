@@ -1,0 +1,16 @@
+package classTest;
+
+public class PersonTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person kim = new Person("kim",188,82,'m',false);
+		
+		System.out.println(kim);
+		
+		kim.name = "김유신";
+		
+		System.out.println(kim);
+	}
+
+}

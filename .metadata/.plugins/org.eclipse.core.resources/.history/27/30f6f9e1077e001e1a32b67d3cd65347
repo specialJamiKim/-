@@ -1,0 +1,144 @@
+package mydate;
+
+public class MyDate {
+	private int year;
+	private int month;
+	private int day;
+	private boolean flag;
+	// private String checkDate;
+
+	public int getYear() {
+		return year;
+	}
+
+	public boolean isFlag() {
+		return flag;
+	}
+
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+
+	public void setYear(int year) {
+		if (year >= 1) {
+			this.year = year;
+		} else {
+			this.year = 1;
+			flag = false;
+		}
+	}
+
+	public int getMonth() {
+		return month;
+	}
+
+	public void setMonth(int month) {
+		if (month >= 1 && month <= 12) {
+			this.month = month;
+		} else {
+			this.month = 1;
+			flag = false;
+		}
+	}
+
+	public int getDay() {
+		return day;
+	}
+
+	public void setDay(int day) {
+		switch (this.month) {
+
+		// 2월 윤년확인 , 월별 일자 처리
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12: {
+			if (this.day >= 1 && this.day <= 31) {
+				flag = true;
+			} else {
+				flag = false;
+			}
+		}
+
+		case 4:
+		case 6:
+		case 9:
+		case 11: {
+			if (this.day >= 1 && this.day <= 30) {
+				flag = true;
+			} else {
+				flag = false;
+			}
+		}
+
+		case 2: {
+			if (this.year % 400 == 0 || (this.year % 4 == 0 && this.year % 100 != 0)) {
+				if (this.day >= 1 && this.day <= 28) {
+					flag = true;
+				} else {
+					flag = false;
+				}
+			} else {
+				if (this.day >= 1 && this.day <= 29) {
+					flag = true;
+				} else {
+					flag = false;
+				}
+			}
+		}
+		}
+	}
+
+	MyDate() {
+		this(1900, 01, 01);
+	}
+
+	MyDate(int year, int month, int day) {
+		this.year = year;
+		this.month = month;
+		this.day = day;
+		// checkDate = String.valueOf(year) + '/' + String.valueOf(month) + '/' +
+		// String.valueOf(day);
+	}
+
+	public String inValid() {
+
+		if (flag)
+			return "유효함";
+		else
+			return "유효하지않음";
+	}
+	// SimpleDateFormat 클래스 사용하여 날짜 유효성 검사
+	/*
+	 * String isValid() { try { SimpleDateFormat dateFormatParser = new
+	 * SimpleDateFormat("yyyy/MM/dd"); // 검증할 날짜 포맷 설정
+	 * dateFormatParser.setLenient(false); // false일경우 처리시 입력한 값이 잘못된 형식일 시 오류가 발생
+	 * dateFormatParser.parse(checkDate); // 대상 값 포맷에 적용되는지 확인 return "유효한 날짜입니다.";
+	 * } catch (ParseException e) { return "유효하지 않은 날짜입니다.";
+	 * 
+	 * } }
+	 */
+	/*
+	 * // 날짜 유효성 검사 String isValid() { if (this.year <= 3000 && this.year >= 0) { if
+	 * (this.month >= 1 && this.month <= 12) { switch (this.month) {
+	 * 
+	 * // 2월 윤년확인 , 월별 일자 처리 case 1: case 3: case 5: case 7: case 8: case 10: case
+	 * 12: { if (this.day >= 1 && this.day <= 31) { return "유효한 날짜입니다."; } else {
+	 * return "유효하지않은 날짜입니다."; } }
+	 * 
+	 * case 4: case 6: case 9: case 11: { if (this.day >= 1 && this.day <= 30) {
+	 * return "유효한 날짜입니다."; } else { return "유효하지않은 날짜입니다."; } }
+	 * 
+	 * case 2: { if (this.year % 400 == 0 || (this.year % 4 == 0 && this.year % 100
+	 * != 0)) { if (this.day >= 1 && this.day <= 28) { return "유효한 날짜입니다."; } else {
+	 * return "유효하지않은 날짜입니다."; } } else { if (this.day >= 1 && this.day <= 29) {
+	 * return "유효한 날짜입니다."; } else { return "유효하지않은 날짜입니다."; } } } } } // 월 숫자 잘못 입력
+	 * else return "유효하지않은 날짜입니다."; } // 년 숫자 잘못입력 else return "유효하지않은 날짜입니다.";
+	 * 
+	 * return "전부잘못"; } }
+	 */
+
+}

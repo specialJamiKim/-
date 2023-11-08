@@ -1,0 +1,18 @@
+package access;
+
+class Student{
+	public int studentID;
+	private String studentName;
+	int score;
+	protected String majorCode;
+	
+}
+
+
+public class AccessModifierTest {
+	
+	public static void main(String args[]) {
+		
+	}
+	
+}

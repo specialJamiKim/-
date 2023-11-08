@@ -1,0 +1,15 @@
+package hello;
+
+import java.util.Scanner;
+
+public class zzzzz {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//학점부여하기
+		
+		Scanner sc = new Scanner(System.in);
+		
+	}
+
+}

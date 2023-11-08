@@ -1,0 +1,9 @@
+package classTest;
+
+public class Person {
+	String name;
+	int height;
+	int weight;
+	char gender; 
+	boolean married;
+}

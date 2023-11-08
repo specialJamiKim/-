@@ -1,0 +1,36 @@
+package reference;
+
+class Subject{
+	int subjectNum;
+	String subjectTitle;
+	String teacherName;
+	int score;
+	
+	Subject(){
+		this(1,"미정","미정",0);
+	}
+	
+	Subject(int subjectNum, String subjectTitle, String teacherName, int score){
+		this.subjectNum = subjectNum;
+		this.subjectTitle = subjectTitle;
+		this.teacherName = teacherName;
+		this.score = score;
+	}
+	
+	public String toString() {
+		return "번호 : " + subjectNum + ", 과목명 : " + subjectTitle+ ", 선생님이름 : " + teacherName+ ", 점수 : " + score;
+	}
+}
+
+
+public class Student {
+	int studentID;
+	Subject korea = new Subject();
+
+	
+	public static void main(String args[]) {
+		Student kim = new Student();
+		kim.korea.subjectTitle = "국어";
+		System.out.println(kim.korea.toString());
+	}
+}

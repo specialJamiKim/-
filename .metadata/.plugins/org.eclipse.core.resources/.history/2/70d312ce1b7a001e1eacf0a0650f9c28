@@ -1,0 +1,13 @@
+package access;
+
+class Student{
+}
+
+
+public class AccessModifierTest {
+	
+	public static void main(String args[]) {
+		
+	}
+	
+}

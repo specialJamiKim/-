@@ -1,0 +1,51 @@
+package classTest;
+
+import java.util.Queue;
+
+class Order {
+	int i;
+	String orderNo;
+	String orderID;
+	String orderDate;
+	String name;
+	String orderItemNumber;
+	String address;
+
+	// 생성자
+	public Order(String orderNo, String orderID, String orderDate, String name, String orderItemNumber,
+			String address) {
+		this.orderNo = orderNo;
+		this.orderID = orderID;
+		this.orderDate = orderDate;
+		this.name = name;
+		this.orderItemNumber = orderItemNumber;
+		this.address = address;
+	}
+	
+	public Order() {
+		this("null","null","null","null","null","null");
+	}
+
+	void showOrderInfo() {
+		System.out.printf("주문번호:%s, 주문자아이디:%s, 주문날짜:%s\n주문자 이름:%s, 주문상품번호:%s, 배송주소:%s", orderNo, orderID, orderDate,
+				name, orderItemNumber, address);
+	}
+
+}
+
+public class OrderTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Order or = new Order();
+		Order or2 = new Order("1","2","2","2","2","2");
+
+	
+		or.showOrderInfo();
+		System.out.println();
+		System.out.println();
+		or2.showOrderInfo();
+
+	}
+
+}

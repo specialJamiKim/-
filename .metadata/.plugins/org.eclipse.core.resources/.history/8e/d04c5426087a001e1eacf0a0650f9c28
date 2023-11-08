@@ -1,0 +1,26 @@
+package classTest;
+
+class Order{
+	int orderNo;
+	int orderID;
+	int orderDate;
+	String name;
+	int orderItemNumber;
+	String address;
+	
+	void showOrderInfo() {
+		
+	}
+	
+	
+}
+
+public class OrderTest {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

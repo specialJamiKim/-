@@ -1,0 +1,17 @@
+package fortest;
+
+import java.util.Scanner;
+
+public class RockPaper {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 가위 바위 보
+		
+		String [] a = {"가위", "바위","보"};
+		
+		Scanner sc = new Scanner(System.in);
+		
+	}
+
+}

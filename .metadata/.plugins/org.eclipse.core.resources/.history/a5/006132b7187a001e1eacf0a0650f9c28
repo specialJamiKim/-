@@ -1,0 +1,13 @@
+package reference;
+
+public class Student {
+	int studentID;
+	String studentName;
+	int koreaScore;
+	String koreaTitle;
+	int mathScore;
+	String mathTitle;
+	int engScore;
+	STring engTitle;
+	
+}

@@ -1,0 +1,54 @@
+package fortest;
+
+import java.util.Scanner;
+
+public class RockPaper {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 가위 바위 보
+
+		String[] a = { "가위", "바위", "보" };
+
+		Scanner sc = new Scanner(System.in);
+
+		int num = (int) (Math.random() * 3);
+		int user = sc.nextInt();
+
+		System.out.println("유저 : " + a[user] + " / 컴퓨터 : " + a[num]);
+
+		switch (user) {
+		case 0: {
+			if (num == 0)
+				System.out.println("비김");
+			else if (num == 1)
+				System.out.println("짐");
+			else
+				System.out.println("이김");
+		}
+		
+		case 1:
+		{
+			if(num == 0)
+				System.out.println("이김");
+			else if(num == 1)
+				System.out.println("비김");
+			else
+				System.out.println("짐");
+		}
+		
+		case 2:
+		{
+			if(num == 0)
+				System.out.println("짐");
+			else if(num == 1)
+				System.out.println("이김");
+			else
+				System.out.println("비김");
+		}
+
+		}
+
+	}
+
+}

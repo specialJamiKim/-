@@ -1,0 +1,20 @@
+package solve_2;
+
+public class No_6 {
+
+	public static void main(String[] args) {
+
+		for (int i = 5; i >0; i--) {
+			
+			//별출력
+			for(int j=;i<j*2-1;j--)
+				System.out.print("*");
+			
+			System.out.println();
+			
+			//공백출력
+		}
+
+	}
+
+}

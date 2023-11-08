@@ -1,0 +1,19 @@
+package solve_2;
+
+public class No_7 {
+
+	public static void main(String[] args) {
+
+		int N = 7;
+		//행 7개
+		for(int i = 7; i >0; i++) {
+			
+			//공백
+			
+			
+			
+		}
+
+	}
+
+}

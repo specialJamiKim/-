@@ -1,0 +1,23 @@
+package whiletest;
+
+public class WhileTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int sum = 0;
+		int i=50;
+		//50-100 summary
+		
+		while(i<=100)
+		{
+			sum +=i;
+			i++;
+		}
+		
+		System.out.println(sum);
+
+		
+	}
+	
+
+}

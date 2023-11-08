@@ -1,0 +1,12 @@
+package classTest;
+
+public class Student {
+	//멤버변수 : 객체가 가지고 있는 변수
+	
+	int studentID;
+	String studentName;
+	int grade;
+	String address;
+	
+	//객체가 할 수 있는 일 : 메서드
+}

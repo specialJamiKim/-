@@ -1,0 +1,38 @@
+package classTest;
+
+import java.math.BigInteger;
+
+class Order{
+	int i;
+	String orderNo;
+	String orderID;
+	String orderDate;
+	String name;
+	String orderItemNumber;
+	String address;
+
+	void showOrderInfo() {
+		System.out.printf("주문번호:%s, 주문자아이디:%s, 주문날짜:%s\n주문자 이름:%s, 주문상품번호:%s, 배송주소:%s",orderNo,orderID,orderDate,name,orderItemNumber,address);
+	}
+	
+	
+}
+
+public class OrderTest {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Order or = new Order();
+		or.orderNo = "20180312001";
+		or.orderID = "abc123";
+		or.orderDate = "2018년3월12일";
+		or.name = "홍길동";
+		or.orderItemNumber = "PD0345-12";
+		or.address = "서울시 영등포구 여의도동 20";
+		
+		or.showOrderInfo();
+		
+	}
+
+}

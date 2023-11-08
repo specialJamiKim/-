@@ -1,0 +1,12 @@
+package fortest;
+
+public class ForTest5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//윤년확인하기 프로그램
+		
+	}
+
+}

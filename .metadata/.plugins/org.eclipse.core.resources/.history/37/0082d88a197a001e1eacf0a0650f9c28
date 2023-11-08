@@ -1,0 +1,39 @@
+package reference;
+
+class Subject{
+	int subjectNum;
+	String subjectTitle;
+	String teacherName;
+	int score;
+	
+	Subject(){
+		this(1,"국어","미정",0);
+	}
+	
+	Subject(int subjectNum, String subjectTitle, String teacherName, int score){
+		this.subjectNum = subjectNum;
+		this.subjectTitle = subjectTitle;
+		this.teacherName = teacherName;
+		this.score = score;
+	}
+}
+
+
+public class Student {
+	int studentID;
+	String studentName;
+	
+	int koreaScore;
+	String koreaTeacher;
+	String koreaTitle;
+	
+	int mathScore;
+	String mathTeacher;
+	String mathTitle;
+	
+	int engScore;
+	String engTitle;
+	String engTeacher;
+	
+	Subject korea = new Subject(1,"국어","홍길동",0);
+}

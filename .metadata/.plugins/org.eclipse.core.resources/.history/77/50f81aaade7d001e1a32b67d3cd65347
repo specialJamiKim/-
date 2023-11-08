@@ -1,0 +1,14 @@
+package reference;
+
+public class StudentTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Subject a = new Subject();
+		System.out.println(a.toString());
+		
+		Subject korea = new Subject(1,"국어","홍길동",0);
+		System.out.println(korea.toString());
+	}
+
+}

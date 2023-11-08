@@ -1,0 +1,11 @@
+package classTest;
+
+public class PersonTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person kim = new Person();
+
+	}
+
+}

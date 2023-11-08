@@ -1,0 +1,13 @@
+package classTest;
+
+public class Person {
+	String name;
+	int height;
+	int weight;
+	char gender; 
+	boolean married;
+	
+	public void showStudentInfo(){
+		System.out.println(name + "," +height + "," + weight + "," + gender + "," + married);
+	}
+}

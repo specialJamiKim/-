@@ -1,0 +1,13 @@
+package solve_2;
+
+public class No_8 {
+
+	public static void main(String[] args) {
+
+		int winCount = 0; //승리횟수
+		
+	
+
+	}
+
+}
