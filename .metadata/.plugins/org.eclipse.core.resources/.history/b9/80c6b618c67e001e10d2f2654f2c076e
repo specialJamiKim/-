@@ -1,0 +1,13 @@
+package p2;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CardCompany hyundai = new CardCompany.getCardCompany();
+		Student kim = new Student();
+		kim.showInfo();
+		
+	}
+
+}

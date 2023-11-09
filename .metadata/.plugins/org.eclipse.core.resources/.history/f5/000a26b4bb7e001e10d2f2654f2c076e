@@ -1,0 +1,19 @@
+package singleton;
+
+public class CompanyTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Company a = Company.getCompany();
+		Company b = Company.getCompany();
+		Company c = Company.getCompany();
+		
+		a.say();
+		b.say();
+		c.say();
+		System.out.println(a==b);
+		
+
+	}
+
+}

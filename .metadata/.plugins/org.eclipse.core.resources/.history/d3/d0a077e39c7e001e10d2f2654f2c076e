@@ -1,0 +1,28 @@
+package cooperation;
+
+public class Student {
+	public String StudentName;
+	public int grade;
+	public int money;
+	
+	public Student() {
+		this("홍길동",2,10000);
+	}
+	
+	public Student(String StudentName, int grade, int money)
+	{
+		this.StudentName = StudentName;
+		this.grade = grade;
+		this.money = money;
+	}
+	
+	public Student(String StudentName, int money) {
+		this.StudentName = StudentName;
+		this.money = money;
+	}
+	
+	public void takeBus(Bus bus) {
+		bus.take(1000);
+		this.money -= 1000;
+	}
+}

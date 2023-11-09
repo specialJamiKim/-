@@ -1,0 +1,9 @@
+package cooperation;
+
+public class Bus {
+	int busNumber;
+	
+	public void take() {
+		
+	}
+}

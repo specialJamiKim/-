@@ -1,0 +1,16 @@
+package cooperation;
+
+public class Subway {
+	int subNumber;
+	public int passengerCount;
+	public int money;
+	
+	
+	
+	public Subway(int subNumber) {
+		this.subNumber = subNumber;
+	}
+	public void take(int price) {
+		money += price;
+	}
+}

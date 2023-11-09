@@ -1,0 +1,27 @@
+package p2;
+
+public class Student {
+	
+	int studentCardNum;
+	String name;
+	public int getStudentCardNum() {
+		return studentCardNum;
+	}
+
+
+	public void setStudentCardNum(int studentCardNum) {
+		this.studentCardNum = studentCardNum;
+	}
+
+
+	Student(String name, int studentCardNum){
+		this.name = name;
+		this.studentCardNum = studentCardNum;
+	}
+
+	public void showInfo() {
+		System.out.println(name + "학생의 카드 번호는 " + studentCardNum + " 입니다.");
+	}
+	
+
+}

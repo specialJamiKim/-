@@ -1,0 +1,31 @@
+package p1;
+
+public class Starbucks {
+	int americanoPrice;//가격
+	int saleCount = 0; //메뉴 판매 횟수
+	int money;
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public int getSaleCount() {
+		return saleCount;
+	}
+	public void setSaleCount(int saleCount) {
+		this.saleCount = saleCount;
+	}
+
+	Starbucks(){}
+	
+	public void sale(int saleCount) {
+		this.saleCount+=saleCount;
+		money += saleCount * price;
+	}
+	
+	public void viewInfo() {
+		System.out.printf("아이스아메리카노 판매 : %d잔, 총 판매금액 : %d",saleCount,money);
+	}
+
+}

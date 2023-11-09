@@ -1,0 +1,52 @@
+package cooperation;
+
+public class Student {
+	public String StudentName;
+	public int grade;
+	public int money;
+	
+	public Student() {
+		this("홍길동",2,10000);
+	}
+	
+	public Student(String StudentName, int grade, int money)
+	{
+		this.StudentName = StudentName;
+		this.grade = grade;
+		this.money = money;
+	}
+	
+	public Student(String StudentName, int money) {
+		this.StudentName = StudentName;
+		this.money = money;
+	}
+	
+	public void takeBus(Bus bus) {
+		bus.take(1000);
+		this.money -= 1000;
+	}
+	
+	public void takeSubway(Subway subway) {
+		subway.take(1000);
+		this.money -= 1500;
+	}
+	
+	public void showInfo() {
+		System.out.println(StudentName + "님의 남은 돈은 " + money + "입니다.");
+	}
+	
+	
+	public static void main(String args[]) {
+		Student s = new Student();
+		Bus b = new Bus(1);
+		Subway sw = new Subway(1);
+		
+		s.takeBus(b);
+		s.takeSubway(sw);
+		
+		s.showInfo();
+		b.showInfo();
+		sw.showInfo();
+		
+	}
+}

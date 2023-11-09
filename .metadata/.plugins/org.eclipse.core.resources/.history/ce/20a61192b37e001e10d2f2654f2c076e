@@ -1,0 +1,17 @@
+package singleton;
+
+public class CarFactory {
+	private static carNum = 10001;
+	private static CarFactory instance = new CarFactory();
+	
+	CarFactory(){
+	}
+	
+	private static CarFactory getCarFactory() {
+		if(instance == null)
+			instance = new CarFactory();
+		return instance;
+	}
+	
+	
+}

@@ -1,0 +1,8 @@
+package p1;
+
+public class Starbucks {
+	int price;//가격
+	int saleCount; //메뉴 판매 횟수
+
+	
+}

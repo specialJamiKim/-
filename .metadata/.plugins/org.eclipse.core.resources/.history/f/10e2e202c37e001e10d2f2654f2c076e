@@ -1,0 +1,27 @@
+package p1;
+
+public class Starbucks {
+	int price;//가격
+	int menuNo; //메뉴 번호 1. 아메리카노 2. 라떼
+	int[] menuCount; //메뉴 판매 횟수
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public int getMenuNo() {
+		return menuNo;
+	}
+	public void setMenuNo(int menuNo) {
+		this.menuNo = menuNo;
+	}
+	public int[] getMenuCount() {
+		return menuCount;
+	}
+	public void setMenuCount(int[] menuCount) {
+		this.menuCount = menuCount;
+	}
+	
+	
+}

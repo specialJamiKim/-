@@ -1,0 +1,11 @@
+package cooperation;
+
+public class Student {
+	public String StudentName;
+	public int grade;
+	public int money;
+	
+	public Student() {
+		this("홍길동",2,10000)
+	}
+}

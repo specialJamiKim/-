@@ -1,0 +1,7 @@
+package p1;
+
+public class Starbucks {
+	int price;//가격
+	int menuNo; //메뉴 번호 1. 아메리카노 2. 라떼
+	int[] menuCount; //메뉴 판매 횟수
+}

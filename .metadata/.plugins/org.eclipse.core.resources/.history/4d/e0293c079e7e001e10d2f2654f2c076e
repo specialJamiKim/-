@@ -1,0 +1,17 @@
+package cooperation;
+
+public class Bus {
+	public int busNumber;
+	public int passengerCount;
+	public int money;
+	
+	
+	
+	public Bus(int busNumber) {
+		this.busNumber = busNumber;
+	}
+	public void take(int price) {
+		money += price;
+		passengerCount++;
+	}
+}

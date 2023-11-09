@@ -1,0 +1,23 @@
+package p1;
+
+public class Starbucks {
+	final int price = 4500;//가격
+	int saleCount; //메뉴 판매 횟수
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public int getSaleCount() {
+		return saleCount;
+	}
+	public void setSaleCount(int saleCount) {
+		this.saleCount = saleCount;
+	}
+
+	Starbucks(){
+		this(4500,0);
+	}
+
+}

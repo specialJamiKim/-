@@ -1,0 +1,9 @@
+package cooperation;
+
+public class Student {
+	public String StudentName;
+	public int grade;
+	public int money;
+	
+	
+}

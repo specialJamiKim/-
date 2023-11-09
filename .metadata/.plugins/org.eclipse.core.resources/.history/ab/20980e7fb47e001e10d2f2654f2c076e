@@ -1,0 +1,27 @@
+package singleton;
+
+public class CarFactory {
+	private int carNum = 10001;
+	private static CarFactory instance = new CarFactory();
+	
+	CarFactory(){
+	}
+	
+	static CarFactory getInstance() {
+		if(instance == null)
+			instance = new CarFactory();
+		return instance;
+	}
+	
+	public int getCarNum() {
+		return carNum;
+	}
+	
+	public void setCarNum(int carNum) {
+		this.carNum = carNum;
+	}
+	
+	public void createCar() {
+		
+	}
+}

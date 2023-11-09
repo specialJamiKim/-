@@ -1,0 +1,7 @@
+package p2;
+
+public class CardCompany {
+	private int cardNum;
+	private static CardCompany instance = new CardCompany();
+	
+}

@@ -1,0 +1,13 @@
+package p2;
+
+public class Student {
+	
+	int studentCardNum;
+	
+	Student(int studentCardNum){
+		this.studentCardNum = studentCardNum;
+	}
+	
+	
+
+}

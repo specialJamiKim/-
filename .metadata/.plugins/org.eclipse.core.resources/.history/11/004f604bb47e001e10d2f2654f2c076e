@@ -1,0 +1,11 @@
+package singleton;
+
+public class Car {
+	int carNum;//차번호
+	
+	
+
+	public int getCarNum() {
+		return carNum;
+	}
+}

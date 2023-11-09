@@ -1,0 +1,13 @@
+package prpr;
+
+import java.io.IOException;
+
+public class Main {
+	public static void main(String args[]) throws IOException {
+		
+		int [] arr = {1,1,2,2,2,8} //킹 퀸 룩 비숍 나이트 폰 / 총 16개
+		
+		
+		
+	}
+}

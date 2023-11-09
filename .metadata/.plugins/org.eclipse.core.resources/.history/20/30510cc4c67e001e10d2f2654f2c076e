@@ -1,0 +1,31 @@
+package p2;
+
+import java.rmi.StubNotFoundException;
+
+public class Student {
+	
+	int studentCardNum;
+	
+	public int getStudentCardNum() {
+		return studentCardNum;
+	}
+
+
+	public void setStudentCardNum(int studentCardNum) {
+		this.studentCardNum = studentCardNum;
+	}
+
+
+	Student(int studentCardNum){
+		this.studentCardNum = studentCardNum;
+	}
+	
+	Student(){}
+	
+	public void showInfo() {
+		System.out.println("학생의 카드 번호는 " + studentCardNum + " 입니다.");
+	}
+	
+	
+
+}

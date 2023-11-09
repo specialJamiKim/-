@@ -1,0 +1,18 @@
+package thistest;
+
+class Birthday{
+	int day;
+	int month;
+	int year;
+	
+	
+}
+
+public class ThisTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
