@@ -3,7 +3,7 @@ package p1;
 public class Starbucks {
 	private int americanoPrice;//아메리카노가격
 	private int saleCount; //메뉴 판매 횟수
-	private int money;
+	private int money; // 총 판매 금액
 	
 
 	public int getAmericanoPrice() {
@@ -46,7 +46,7 @@ public class Starbucks {
 	}
 	
 	public void viewInfo() {
-		System.out.printf("아메리카노 판매 : %d잔, 총 판매금액 : %d\n",saleCount,money);
+		System.out.printf("스타벅스 아메리카노 판매 : %d잔 ==> 총 판매금액 : %d\n",saleCount,money);
 	}
 
 }

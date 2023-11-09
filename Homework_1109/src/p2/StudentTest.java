@@ -6,10 +6,10 @@ public class StudentTest {
 		// TODO Auto-generated method stub
 		CardCompany hyundai = CardCompany.getCardCompany(); //유일객체 생성
 		
-		Student kim = hyundai.createStudent();
+		Student kim = hyundai.createStudent("kim");
 		kim.showInfo();
 		
-		Student lee = hyundai.createStudent();
+		Student lee = hyundai.createStudent("lee");
 		lee.showInfo();
 		
 	}

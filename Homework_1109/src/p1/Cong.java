@@ -3,14 +3,14 @@ package p1;
 public class Cong {
 	private int lattePrice;// 라떼가격
 	private int saleCount; // 메뉴 판매 횟수
-	private int money;
+	private int money; //총 판매 금액	
 
-	public int getAmericanoPrice() {
+	public int getLattePrice() {
 		return lattePrice;
 	}
 
-	public void setAmericanoPrice(int americanoPrice) {
-		this.lattePrice = americanoPrice;
+	public void setLattePrice(int lattePrice) {
+		this.lattePrice = lattePrice;
 	}
 
 	public int getSaleCount() {
@@ -29,6 +29,7 @@ public class Cong {
 		this.money = money;
 	}
 
+	//라떼 가격, 판매 횟수, 판매 금액 초기화
 	Cong() {
 		this(4500, 0, 0);
 	}
@@ -45,7 +46,7 @@ public class Cong {
 	}
 
 	public void viewInfo() {
-		System.out.printf("라떼 판매 : %d잔, 총 판매금액 : %d\n", saleCount, money);
+		System.out.printf("콩카페 라떼 판매 : %d잔 ==> 총 판매금액 : %d\n", saleCount, money);
 	}
 
 }
